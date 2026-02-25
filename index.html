@@ -33,14 +33,49 @@
 			background-color: #111111;
 			}
 
-			body {
-				background-image: url('images/nejmalogo.png');
-			}
+			.main-header {
+				display: flex;
+				justify-content: space-between; /* Pushes logo to left, links to right */
+				align-items: center; /* Vertically centers items */
+				padding: 10px 20px; /* Add some padding */
+				background-color: #000000; /* Example background */
+				}
+
+			.logo-img {
+				height: 50px;
+				width: auto;
+				}
+
+			.main-nav ul {
+				list-style: none;
+				margin: 0;
+				padding: 0;
+				display: flex;
+				}
+
+			.main-nav ul li {
+				margin-left: 20px;
+				}
+
+			.main-nav ul li a {
+				text-decoration: none;
+				color: #333;
+				}
+
 	</style>
 	</head>
-	<body>
-		<ul>
-			<li><a href="about.html"><h3 style="color: #94801d">ABOUT</h3></a></li>
-		</ul>
+	<body style="background-color: #000000;">
+		<header class="main-header">
+  			<a href="/" class="logo-link">
+    		<img src="images/nejmalogo.png" alt="Company Logo" class="logo-img">
+  			</a>
+
+			<nav class="main-nav">
+				<ul>
+					<li><a href="index.html"><h3 style="color:#94801d">HOME</h3></a></li>
+					<li><a href="about.html"><h3 style="color: #94801d">ABOUT</h3></a></li>
+				</ul>
+			</nav>
+		</header>
 	</body>
 </html>
